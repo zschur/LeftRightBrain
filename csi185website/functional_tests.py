@@ -29,7 +29,9 @@ class NewVisitorTest(unittest.TestCase):
     def test_home_page(self):
         """
 
-        Put your description of the purpose of your web site here.
+        The purpose of this website is to give the v/user an interactive
+        experience about the left/right brain and how the concepts of seperate
+        hemisphereic tasks are false. 
 
         """
 
