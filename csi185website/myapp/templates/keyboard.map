@@ -1,4 +1,4 @@
-<img src="Untitled" width="800" height="542" border="0" usemap="#map" />
+<img src="canada.jpg" width="600" height="450" border="0" usemap="#map" />
 
 <map name="map">
 <!-- #$-:Image map file created by GIMP Image Map plug-in -->
@@ -6,5 +6,5 @@
 <!-- #$-:Please do not edit lines starting with "#$" -->
 <!-- #$VERSION:2.3 -->
 <!-- #$AUTHOR:Michael Toth -->
-<area shape="rect" coords="356,371,561,538"  nohref="nohref" />
+<area id="nextpage" shape="rect" coords="356,371,561,538"  href="nextpage.html" />
 </map>

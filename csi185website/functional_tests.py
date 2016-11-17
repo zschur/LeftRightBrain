@@ -47,7 +47,7 @@ class NewVisitorTest(unittest.TestCase):
         # In general this is how we check for images on a page.
 
         m=self.browser.find_element_by_tag_name('img')
-        self.assertIn('homebrew.png',m.get_attribute('src'))
+        self.assertIn('canada.jpg',m.get_attribute('src'))
 
         # We check here for the title of your home page.
         # uncomment the next lines and change the text when you set your title.
@@ -55,24 +55,24 @@ class NewVisitorTest(unittest.TestCase):
 
         h=self.browser.find_element_by_css_selector('h1')
         self.assertIn("Hemispheres Connected",h.text)
-
-        # There is an area specified around the computer keyboard.
-        # the 'id' of this area is 'keyboard'
-
-        # this is how we find that area.
-        a=self.browser.find_element_by_id('keyboard')
-
-        # this is how we click on it.
-        a.click()
-
-        # after clicking on it, we should see the next page.
-        e=self.browser.find_element_by_css_selector("h1")
-        self.assertIn('Keyboards',e.text)
-
-        # The page should have a picture of a teletype machine. 
-        m=self.browser.find_element_by_tag_name('img')
-        self.assertIn('teletype.jpg',m.get_attribute('src'))
-    
+##
+##        # There is an area specified around the computer keyboard.
+##        # the 'id' of this area is 'keyboard'
+##
+##        # this is how we find that area.
+        a=self.browser.find_element_by_id('nextpage')
+##
+##        # this is how we click on it.
+##        a.click()
+##
+##        # after clicking on it, we should see the next page.
+##        e=self.browser.find_element_by_css_selector("h1")
+##        self.assertIn('Keyboards',e.text)
+##
+##        # The page should have a picture of a teletype machine. 
+##        m=self.browser.find_element_by_tag_name('img')
+##        self.assertIn('teletype.jpg',m.get_attribute('src'))
+##    
 
 if __name__=="__main__":
         unittest.main(warnings="ignore")
