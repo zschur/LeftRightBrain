@@ -72,7 +72,12 @@ class NewVisitorTest(unittest.TestCase):
 ##        # The page should have a picture of a teletype machine. 
 ##        m=self.browser.find_element_by_tag_name('img')
 ##        self.assertIn('teletype.jpg',m.get_attribute('src'))
-##    
+##
+        self.browser.get('http://localhost:8000/index.html')
+        l=self.browser.find_element_by_link_text('Credits')
+        l.click()
+        a=self.browser.current_url
+        self.assertIn("credits.html",a)
 
 if __name__=="__main__":
         unittest.main(warnings="ignore")
